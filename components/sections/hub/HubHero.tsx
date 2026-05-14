@@ -46,6 +46,7 @@ export default function HubHero({ title, subtitle, imgUrl }: HubHeroProps) {
                             className="object-cover"
                             priority
                             fetchPriority="high"
+                            quality={100}
                             sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                     ) : (

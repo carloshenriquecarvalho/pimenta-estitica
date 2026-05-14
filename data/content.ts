@@ -111,7 +111,7 @@ export const hubContent: HubContent = {
     hero: {
         title: "Equipando as Melhores Clínicas do Brasil",
         subtitle: "Tecnologia high-ticket, treinamento de excelência e suporte técnico premium. A Pimenta Estética Multimarcas é o seu parceiro estratégico para escalar resultados.",
-        imgUrl: ""
+        imgUrl: "/hero-hub-banner.png"
     },
     about: {
         title: "Sobre a Pimenta Estética Multimarcas",

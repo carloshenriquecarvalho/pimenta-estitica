@@ -11,6 +11,7 @@ import Testimonials from "@/components/sections/landing/Testimonials";
 import Faq from "@/components/sections/landing/Faq";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("http://localhost:3000"),
   title: "Pimenta Estética Multimarcas | Equipamentos High Ticket",
   description: "Distribuição dos melhores equipamentos para clínicas de estética avançada e médica. Tecnologia de ponta, treinamento e suporte técnico.",
   openGraph: {
