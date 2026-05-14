@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --background: #121212;
+  --highlight: #D4AF37;
+  --highlight-hover: #B5952F;
+  --title: #FFFFFF;
+  --buttonText: #121212;
+  --shadow: #2A2A2A;
+  --card: #1E1E1E;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-button: var(--highlight);
+  --color-hover: var(--highlight-hover);
+
+  --color-card: var(--card);
+
+  --color-title: var(--title);
+
+  --color-shadow: var(--shadow);
+
+  --color-buttonText: var(--buttonText);
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+body {
+  background: var(--background);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  color: #E0E0E0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
