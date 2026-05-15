@@ -10,7 +10,7 @@ export default function Hero({ title, subtitle, buttonText, buttonUrl, imgUrl }:
         <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-background pt-2">
             <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center w-full">
                 <motion.div 
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 1, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="flex flex-col gap-6 z-10"
@@ -32,7 +32,7 @@ export default function Hero({ title, subtitle, buttonText, buttonUrl, imgUrl }:
                 </motion.div>
                 
                 <motion.div 
-                    initial={{ opacity: 0, scale: 0.95 }}
+                    initial={{ opacity: 1, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
                     className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] rounded-2xl overflow-hidden shadow-2xl"
