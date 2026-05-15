@@ -22,6 +22,7 @@ export default function HubAbout({ title, description, aestheticianName, imgUrl 
                             alt={aestheticianName} 
                             fill 
                             className="object-cover"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                     ) : (
                         <div className="w-full h-full bg-shadow flex items-center justify-center text-title/50">

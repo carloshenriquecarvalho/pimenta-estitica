@@ -16,6 +16,7 @@ export default function Cta({ title, imgUrl }: CtaProps) {
                         alt="CTA Background" 
                         fill 
                         className="object-cover opacity-30 mix-blend-overlay"
+                        sizes="100vw"
                     />
                 )}
             </div>

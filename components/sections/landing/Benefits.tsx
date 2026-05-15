@@ -36,6 +36,7 @@ export default function Benefits({ title, subtitle, imgUrls }: BenefitsProps) {
                                     alt={`Benefício ${index + 1}`} 
                                     fill 
                                     className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                    sizes="(max-width: 768px) 100vw, 33vw"
                                 />
                             ) : (
                                 <div className="w-full h-full bg-shadow flex items-center justify-center text-title/40">

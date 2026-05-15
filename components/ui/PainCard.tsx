@@ -32,6 +32,7 @@ export default function PainCard({ card, index }: PainCardProps) {
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                         src={card.imgUrl}
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     />
                 ) : (
                     <div className="w-full h-full flex items-center justify-center text-title/30">

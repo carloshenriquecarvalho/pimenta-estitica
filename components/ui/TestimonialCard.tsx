@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Star, Quote } from "lucide-react";
 import { TestimonialItem } from "@/types/types";
+import { YouTubeEmbed } from '@next/third-parties/google';
 
 interface TestimonialCardProps {
     card: TestimonialItem;
@@ -21,12 +22,10 @@ export default function TestimonialCard({ card, index }: TestimonialCardProps) {
         >
             {card.videoUrl ? (
                 <div className="relative w-full aspect-[9/16] md:aspect-video bg-shadow overflow-hidden">
-                    <iframe 
-                        src={card.videoUrl} 
-                        title={`Depoimento de ${card.title}`}
-                        className="absolute inset-0 w-full h-full border-0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowFullScreen
+                    <YouTubeEmbed 
+                        videoid={card.videoUrl.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/)![1]} 
+                        playlabel={`Depoimento de ${card.title}`}
+                        params="rel=0"
                     />
                 </div>
             ) : (

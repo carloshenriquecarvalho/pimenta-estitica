@@ -29,6 +29,7 @@ export default function Solution({ cardContent }: SolutionProps) {
                             alt="Solução" 
                             fill 
                             className="object-cover"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                     ) : (
                         <div className="w-full h-full bg-shadow flex items-center justify-center text-title/50">
